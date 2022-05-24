@@ -6,6 +6,9 @@ from django.conf import settings
 def FormularioContacto(request):
     return render(request, "FormularioContacto.html")
 
+def indexprincipal(request):
+    return render(request, "index.html")
+
 def contactar(request):
     if request.method =="POST":
          asunto = request.POST["txtAsunto"]
@@ -15,3 +18,4 @@ def contactar(request):
          send_mail(asunto, mensaje, email_desde, email_para, fail_silently=False)
          return render(request, "contactoExitoso.html")
     return render(request, "FormularioContacto.html")
+
