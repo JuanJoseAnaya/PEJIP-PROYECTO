@@ -37,38 +37,38 @@ def contactar(request):
     return render(request, "FormularioContacto.html")
 
 
-class ListadoPersonas(ListView):
-    model = Personas
+class ListadoAntojos(ListView):
+    model = Antojos
     
     
-class PersonasCrear(SuccessMessageMixin, CreateView):
-    model =Personas
-    form = Personas
+class AntojosCrear(SuccessMessageMixin, CreateView):
+    model =Antojos
+    form = Antojos
     fields = "__all__"
-    success_message ='Personas creada correctamente'
+    success_message ='Antojos creada correctamente'
      
     def get_success_url(self):        
         return reverse('leer') # Redireccionamos a la vista principal 'leer'
 
-class PersonasDetalle (DetailView):
-    model =Personas
+class AntojosDetalle (DetailView):
+    model =Antojos
 
-class  PersonasActualizar(SuccessMessageMixin,UpdateView):
-    model =  Personas
-    form = Personas
+class  AntojosActualizar(SuccessMessageMixin,UpdateView):
+    model =  Antojos
+    form = Antojos
     fields = "__all__" # Le decimos a Django que muestre todos los campos de la tabla 'postres' de nuestra Base de Datos 
-    success_message = 'Personas Actualizado Correctamente !' # Mostramos este Mensaje luego de Editar un Postre 
+    success_message = 'Antojos Actualizado Correctamente !' # Mostramos este Mensaje luego de Editar un Postre 
 
     def get_success_url(self):               
         return reverse('leer') # Redireccionamos a la vista principal 'leer'
-class PersonasEliminar(SuccessMessageMixin, DeleteView): 
-    model = Personas 
-    form = Personas
+class AntojosEliminar(SuccessMessageMixin, DeleteView): 
+    model = Antojos 
+    form = Antojos
     fields = "__all__"     
  
     # Redireccionamos a la página principal luego de eliminar un registro o postre
     def get_success_url(self): 
-        success_message = 'Personas Eliminado Correctamente !' # Mostramos este Mensaje luego de Editar un Postre 
+        success_message = 'Antojos Eliminado Correctamente !' # Mostramos este Mensaje luego de Editar un Postre 
         messages.success (self.request, (success_message))       
         return reverse('leer') # Redireccionamos a la vista principal 'leer
 
