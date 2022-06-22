@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'registro1.css'%}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            Registrate
+        </div>
+        <div class="form">
+            <div class="input_field">
+                <label>Nombre</label>
+                <input type="text" class="input">
+            </div>
+            <div class="input_field">
+                <label>Apellidos</label>
+                <input type="text" class="input">
+            </div>
+            <div class="input_field">
+                <label>Contraseña</label>
+                <input type="password" class="input">
+            </div>
+            <div class="input_field">
+                <label>confirmar Contraseña</label>
+                <input type="password" class="input">
+            </div>
+            <div class="input_field">
+                <label>Genero</label>
+                <div class="custom_select">
+                    <select>
+                        <option value="">Seleccionar</option>
+                        <option value="male">Masculino</option>
+                        <OPtion value="female">Femenino</OPtion>
+                        <OPtion value="female">indefinido</OPtion>
+                    </select>
+                </div>
+            </div>
+            <div class="input_field">
+                <label>Correo Electronico</label>
+                <input type="password" class="input">
+            </div>
+            <div class="input_field">
+                <label>Numero Telefono</label>
+                <input type="password" class="input">
+            </div>
+            
+            <div class="input_field">
+                <label>codigo postal</label>
+                <input type="password" class="input">
+            </div>
+            <div class="input_field terms">
+                <label class="check">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <p>Acepta terminos y condiciones</p>
+            </div>
+            <div class="input_field">
+                <input type="submit" value="Registrarse" class="btn">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

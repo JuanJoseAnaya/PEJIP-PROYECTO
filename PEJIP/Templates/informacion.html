@@ -1,0 +1,180 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicialPEJIP</title>
+    <link rel="stylesheet" href="{% static 'informacion.css'%}">
+    <link href="https: //fonts.googleapis.com/css2? family= Open+Sans:wght@300 & display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <li><a href="#">SERVICIOS</a></li>
+            <li><a href="#">ACERCA DE </a></li>
+            <li><a href="#">REGISTRATE</a></li>
+            <li><a href="">LOGIN</a></li>
+        </nav>
+        <section class="textos-header">
+            <h1>lleva un control intimo y seguro </h1>
+            <h2>dentro de nuestra app</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 341.13,-2.44 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">PEJIP</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="{% static 'imginformacion/primero.jpg' %}" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <h3><span>1</span>los mejosres servicios</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga quibusdam ducimus architecto debitis sunt laborum quidem tempore, exercitationem ea aperiam accusamus sed incidunt. Officia facilis quaerat, inventore harum officiis molestias.</p>
+                    <h3><span>2</span>los mejosres servicios</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga quibusdam ducimus architecto debitis sunt laborum quidem tempore, exercitationem ea aperiam accusamus sed incidunt. Officia facilis quaerat, inventore harum officiis molestias.</p>
+                </div>
+            </div>
+        </section>
+        <section class="portafilo">
+            <div class="contenedor">
+                <h2 class="titulo">SERVICIOS</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="{% static 'imginformacion/prevencion.jpg' %}"  alt="">
+                        <a href="MetodosAnticonceptivos/registro.html">
+                            <div class="hover-galeria">
+                                <img src="{% static 'imginformacion/favicon/seleccion.png' %}" alt="">                           
+                                <p>Metodos Anticonceptivos</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="{% static 'imginformacion/calendariom.jpg' %}" alt="">
+                        <a href="">
+                            <div class="hover-galeria">
+                                <img src="{% static 'imginformacion/favicon/seleccion.png' %}" alt="">
+                                <p>Calendaro Mestrual</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="{% static 'imginformacion/calendariop.jpg' %}" alt="">
+                        <a href="">
+                            <div class="hover-galeria">
+                                <img src="{% static 'imginformacion/favicon/seleccion.png' %}" alt="">
+                                <p>Calendario Prenatal</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="{% static 'imginformacion/cartelera.PNG' %}" alt="">
+                        <a href="">
+                            <div class="hover-galeria">
+                                <img src="{% static 'imginformacion/favicon/seleccion.png' %}" alt="">
+                                <p>Cartelera Informativa</p>
+                            </div>
+                        </a>    
+                    </div>
+                    <div class="imagen-port">
+                        <img src="{% static 'imginformacion/psicologia.jpg' %}" alt="">
+                        <a href="">
+                            <div class="hover-galeria">
+                                <img src="{% static 'imginformacion/favicon/seleccion.png' %}" alt="">
+                                <p>Psicologia</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="{% static 'imginformacion/ubicacion.PNG' %}" alt="">
+                        <a href="">
+                            <div class="hover-galeria">
+                                <img src="{% static 'imginformacion/favicon/seleccion.png' %}" alt="">
+                                <p>Ubicacion Entidades</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clientes contenedor">
+            <h2 class="titulo"> NUESTROS CONVENIOS</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="{% static 'imginformacion/SUSANA.jpg' %}" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>HOSPITAL SUSANA</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, earum.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'imginformacion/estancia.jpg' %}" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>CLINICA LA ESTANCIA</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, earum.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'imginformacion/san-jose.jpg' %}" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>HOSPITAL UNIVERSITARIO SAN JOSE</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, earum.</p>
+                    </div>
+                </div>
+            </div>         
+        </section>
+        <section class="about-services">
+            <div class="contenedor">
+                <h2 class="titulo">CREADORES</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <img src="{% static 'imginformacion/Anaya.PNG' %}" alt="">
+                        <h3>Juan Jose Anaya</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, deleniti?</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="{% static 'imginformacion/Luna.PNG' %}" alt="">
+                        <h3>Luna Tatiana Mazabuel</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, deleniti?</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="{% static 'imginformacion/Aliver.PNG' %}" alt="">
+                        <h3>Aliver Anacona</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, deleniti?</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="{% static 'imginformacion/Majo.PNG' %}" alt="">
+                        <h3>Maria Jose Londoño</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, deleniti?</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="{% static 'imginformacion/anny.PNG' %}" alt="">
+                        <h3>Anny Fernanda Cajas</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, deleniti?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>phone</h4>
+                <p>3135493521</p>
+            </div>
+            <div class="content-foo">
+                <h4>email</h4>
+                <p>aanacona40@misena.edu.co</p>
+            </div>
+            <div class="content-foo">
+                <h4>location</h4>
+                <p>popayan cauca</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">PEJIP|Aliver Anacona</h2>
+    </footer>
+    
+</body>
+</html>

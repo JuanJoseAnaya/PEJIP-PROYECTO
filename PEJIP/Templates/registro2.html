@@ -1,0 +1,144 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'registro2.css'%}">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>REGISTRO</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">detalles personales</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Nombre</label>
+                            <input type="text"placeholder="introduzca su nombre" required></input>   
+                        </div>
+                        <div class="input-field">
+                            <label>Apellido</label>
+                            <input type="text"placeholder="introduzca sus Apellidos" required></input>   
+                        </div>
+                        <div class="input-field">
+                            <label>Edad</label>
+                            <input type="number"placeholder="introduzca su edad" required></input>   
+                        </div>
+                        <div class="input-field">
+                            <label>fecha nacimiento</label>
+                            <input type="date"placeholder="ingrese la fecha de nacimiento" required></input>   
+                        </div>
+
+                        <div class="input-field">
+                            <label>lugar nacimiento</label>
+                            <input type="text"placeholder="introduzca su lugar de nacimiento" required></input>   
+                        </div>
+
+                        <div class="input-field">
+                            <label>numero celular</label>
+                            <input type="number"placeholder="ingrese el número de móvil" required></input>   
+                        </div>
+
+                        <div class="input-field">
+                            <label>Correo electrónico</label>
+                            <input type="text"placeholder="Introduce tu correo electrónico" required></input>   
+                        </div>
+
+                        <div class="input-field">
+                            <label>Contraseña</label>
+                            <input type="password"placeholder="Crea tu Contraseña" required></input>   
+                        </div>
+
+                        <div class="input-field">
+                            <label> Confirmar Contraseña</label>
+                            <input type="password"placeholder="Confirma tu Contraseña" required></input>   
+                        </div>
+
+                        <div class="input-field">
+                            <label>Genero</label>
+                                <select>
+                                    <option value="">Seleccionar</option>
+                                    <option value="male">Masculino</option>
+                                    <OPtion value="female">Femenino</OPtion>
+                                    <OPtion value="female">indefinido</OPtion>
+                                </select>
+                            </input>   
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Detalles de identidad</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Tipo documento</label>
+                            <select>
+                                <option value="">Seleccionar</option>
+                                <option value="male">Cedula Ciudadania</option>
+                                <OPtion value="female">Targeta de Identidad</OPtion>
+                            </select>  
+                        </div>
+                        <div class="input-field">
+                            <label>numero documento</label>
+                            <input type="number"placeholder="ingrese el número de identificación " required></input>   
+                        </div>
+                        <div class="input-field">
+                            <label>Fecha expedicion</label>
+                            <input type="date"placeholder="ingrese la fecha de emisión" required></input>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form second">
+                <div class="details addres">
+                    <span class="title">detalles de dirección</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>direccion</label>
+                            <input type="text"placeholder="ingrese su dirección" required></input>   
+                        </div>
+                        <div class="input-field">
+                            <label>municipio</label>
+                            <input type="text"placeholder="ingresar municipio recidencia" required></input>   
+                        </div>
+                        <div class="input-field">
+                            <label>departamento</label>
+                            <input type="text"placeholder="ingresa el departamento" required></input>   
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Persona contacto</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>persona contacto</label>
+                            <input type="text"placeholder="introduzca su nombre" required></input>   
+                        </div>
+                        <div class="input-field">
+                            <label>celular contacto</label>
+                            <input type="number"placeholder="ingrese el número de móvil" required></input>   
+                        </div>   
+                    </div>
+                    <div class="text-center px-lg-5 pt-lg-3 pb-lg-4 p-4 w-100 mb-auto">
+                        <p class="d-inline-block mb-0">¿Ya tienes una cuenta?</p> <a href="#">inicia sesion</a>
+                    </div>
+                    <div class="buttons">
+                        <button class="nextBtn">
+                            <span class="btntxt">Registrarse</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

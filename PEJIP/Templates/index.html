@@ -2,146 +2,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">                                                                                       
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>PEJIP_APP</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="{% static 'estilos.css'%}">
+	<script src="https://kit.fontawesome.com/b9cae8df03.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<header>
-		<nav class="navbar">
+    <header>
+		<nav class="navbar"></center>
 			<div class="contenedor">
-				<a href="#">NOSOTROS</a>
-				<a href="#">SERVICIOS</a>
-				<a href="#">REGISTRO PERSONA</a>
-				<a href="#">REGISTRO EMPRESA</a>
-				<a href="#">INICIAR SESIÓN</a>
+				<li><a href="#">NOSOTROS</a>
+					<ul>
+						<li><a href="#">Info Creadores</a></li>
+						<li><a href="#">Acerca de la App</a></li>
+						<li><a href="#">Info Convenios</a></li>
+						<li><a href="#">Contactenos</a>
+                            <ul>
+                                <li><a href="#">Submenu 1</a></li>
+                                <li><a href="#">Submenu 2</a></li>
+                                <li><a href="#">Submenu 3</a></li>
+                                <li><a href="#">Submenu 4</a></li>	
+                            </ul>
+                        </li>	
+					</ul>
+
+				</li>
+
+				<li><a href="#">SERVICIOS</a>
+					<ul>
+						<li><a href="#">Anticonceptivos</a>
+                            <ul>
+                                <li><a href="#">Hormonas & tu ciclo</a></li>
+                                <li><a href="#">Hormonales</a></li>
+                                <li><a href="#">No Hormonales</a></li>	
+                            </ul>
+                        </li>
+						<li><a href="#">Calendario Mestrual</a></li>
+						<li><a href="#">Calendario Prenatal</a></li>
+						<li><a href="#">Cartelera Informativa</a></li>
+                        <li><a href="#">psicologia</a></li>
+						<li><a href="#">Mapas</a></li>	
+					</ul>
+				</li>
+
+				<li><a href="#">REGISTRO PERSONA</a></li>
+				<li><a href="#">REGISTRO EMPRESA</a></li>
+				<li><a href="login.html">REGISTRATE</a></li>
 			</div>
 		</nav>
-		<div class="contenedor-imagen">
-			<a href="#">
-				
-				<img src="{% static 'img/primero.jpg'%}" alt="">
-				<center><right><button class="button"><SPan>CONOCE MAS DE NUESTROS SERVICIOS</SPan>></button ></center>
-
-			</a>
-		</div>
-	</header></br><br>
-	<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
-	<main id="blog">
+		
+    </header>
+    <div class="contenedor-imagen">
+        <a href="#">
+            <center><img src="{% static 'img/primero.jpg'%}" alt=""></center>	
+        </a>
+    </div>
+    <center><right><button class="button"><SPan>CONOCE MAS DE NUESTROS SERVICIOS</SPan>></button ></center><br>
+    <div class="galeria">
+        <div class="foto">
+            <img src="{% static 'img/anticonceptivos (2).jpeg'%}">
+        </div><hr>
+        <div class="pie">
+            <p>METODOS ANTICONCEPTIVOS</p>
+            <p>CONOCE UN POCO MAS</p>
+        </div>
+    </div>
+    <div class="galeria">
+        <div class="foto">
+            <img src="{% static 'img/calendariom.jpg'%}">
+        </div><hr>
+        <div class="pie">
+            <p>CALENDARIO MENSTRUAL</p>
+            <p>MANTEN AL DIA</p>
+        </div>
+    </div>
+    <div class="galeria">
+        <div class="foto">
+            <img src="{% static 'img/embarazo.jpg'%}">
+        </div>
+        <div class="pie">
+            <p>CALENDARIO PRENATAL</p>
+            <p>CONOCE MAS ALLA</p>
+        </div>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+    <div class="galeria">
+        <div class="foto">
+            <img src="{% static 'img/Captura.PNG'%}">
+        </div><hr>
+        <div class="pie">
+            <p>CARTELERA INFORMATIVA</p>
+            <p>PARTICIPA EN ESTOS EVENTOS</p>
+        </div>
+    </div>
+    <div class="galeria">
+        <div class="foto">
+            <img src="{% static 'img/ibo.jpg'%}">
+        </div><hr>
+        <div class="pie">
+            <p>PSICOLOGIA</p>
+            <p>CONOCE MAS DE TI</p>
+        </div>
+    </div>
+    <div class="galeria">
+        <div class="foto">
+            <img src="{% static 'img/ubi.PNG'%}">
+        </div><hr>
+        <div class="pie">
+            <p>MAPA ENTIDADES DE SALUD</p>
+            <p>UBICA TU CENTRO DE SALUD MAS CERCANO</p>
+        </div>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></b></b><hr>    
+        
+    <center><right><button class="button"><SPan>CONVENIOS</SPan>></button ></center><br><br>
+    <main id="blog">
 		<div class="contenedor">
 			<aside>
-				<center><right><button class="button1"><SPan>metodos anticonceptivos</SPan>></button ></center><hr><hr>
-				<br>
-				<nav class="indice">
-					<center><img src="{% static 'img/metodos.jpg'%}" alt=""></center>
-
-				</nav><br><br><br><br><br>
-				<center><right><button class="button2"><SPan>calendario mentrual</SPan>></button ></center><hr><hr>
-				<br>
-
-				<nav class="indice">
-					<center><img src="{% static 'img/calendariom.jpg'%}" alt=""></center>
-
-				</nav>
-				
+				<div class="galeria">
+					<div class="foto">
+						<img src="{% static 'img/HOSPITAL.jpg'%}">
+					</div>
+					<div class="pie">
+						<p>convenio</p>
+						<p>ips3</p>
+					</div>
+				</div>		
 			</aside>
 			<aside>
-				<center><right><button class="button1"><SPan>cartelera informativa</SPan>></button ></center><hr><hr>
-				<br>
-				<nav class="indice">
-					<center><img src="{% static 'img/cartelera.jpg'%}" alt=""></center>
-					
-
-				</nav><br><br><br><br><br>
-				<center><right><button class="button2"><SPan>psicologia</SPan>></button ></center><hr><hr>
-				<br>
-
-				<nav class="indice">
-					<center><img src="{% static 'img/psicologia.jpg' %}" alt=""></center>
-
-				</nav>
-				
+				<div class="galeria">
+					<div class="foto">
+						<img src="{% static 'img/estancia.jpg'%}">
+					</div>
+					<div class="pie">
+						<p>convenio</p>
+						<p>ips3</p>
+					</div>
+				</div>	
 			</aside>
 			<aside>
-				<center><right><button class="button1"><SPan>calendario prenatal</SPan>></button ></center><hr><hr>
-				<br>
-				<nav class="indice">
-					<center><img src="{% static 'img/embarazo.jpg'%}" alt=""></center>
-
-				</nav><br><br><br><br><br>
-				<center><right><button class="button2"><SPan>eventos</SPan>></button ></center><hr><hr>
-				<br>
-
-				<nav class="indice">
-					<center><img src="{% static 'img/eventos.jpg'%}" alt=""></center>
-
-				</nav>
-				
+				<div class="galeria">
+					<div class="foto">
+						<img src="{% static 'img/SUSANA.jpg'%}">
+					</div>
+					<div class="pie">
+						<p>convenio</p>
+						<p>ips3</p>
+					</div>
+				</div>
 			</aside>
-			
-		</div><br><br><br><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
-		<div class="contenido">
-			<div class="post"><br>
-				<center><right><button class="button"><SPan>CONVENIOS</SPan>></button ></center><br>
-					<div class="fila">
-						<div class="columna">
-							<img src="{% static 'img/calendariom.jpg'%}">
-						</div>
-						<div class="columna">
-							<img src="{% static 'img/cartelera.jpg'%}">
-						</div>
-					</div>
-					<div class="fila">
-						<div class="columna">
-							<img src="{% static 'img/calendariom.jpg'%}">
-						</div>
-						<div class="columna">
-							<img src="{% static 'img/cartelera.jpg'%}">
-						</div>
-					</div>
-			
-				<IMG SRc="{% static 'img/MESSI.jpg'%}">
-			</div>
-			<div class="post">
-				<h1 class="titulo">VIDEOJUEGOS</h1><BR/>
-				<table>
-					<tr>
-						<th>FIFA</th>
-						<th>Call Off Duty</th>
-						<th>Free Fire</th>
-						<th> Parchis</th>
-						<th></th>
-						<th>Grand Theft Auto/San Andreas</th>
-					</tr>
+		</div>
+	</main><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+    <div class="container-form">
+        <div class="info-form">
+            <h2>contactanos</h2>
+            <p> Somos Tu app Amiga contactanos para asesorarte de la mejor manera
+                encontraras mucha informacion, contaras con el acompañamiento de 
+                expertos en la salud mental y psicologica.
+                <br>
+                Cuentanos Tu experiencia Es de mucha importancia para nosotros
+            
+            </p>
+            <a href="#"><i class="fa fa-phone"></i>3135493521</a>
+            <a href="#"><i class="fa fa-envelope"></i>aanacona40@misena.edu.co</a>
+            <a href="#"><i class="fa fa-map-marked"></i>ciudad, pais</a>
 
-				</table><BR/>
-				<p>los videojuegos me gustan mucho ya que en ellos encuentro entretenimiento, retos especialmente juegos battle royale, principalmente porque juego con personas en linea reales. mi juego favorito free fire por su jugabilidad </p>
-				<img src="https://imagenes.20minutos.es/files/article_default_content/uploads/imagenes/2021/08/27/free-fire.jpeg">
-			</div>
-			<div class="post">
-				<h1 class="titulo">MONTAR BICICLETA</h1>
-				<p>En el ciclismo se ejercitan sobre todo las piernas, pero con los paisajes y la tranquilidad que te proporciona es un buen deporte para inspirarse, pero eso no es todo, es un deporte que puedes ir acompañado de tus amigos y que podeis grabar y hacer fotos para luego hacer un powerpoint e ir viendo el progreso que has hecho como a mi me gusta hacer. ayuda mucho a la salud mental</p>
-				<img src="https://img.freepik.com/foto-gratis/hombre-pensativo-bajando-colina_329181-8688.jpg?size=626&ext=jpg&ga=GA1.1.815143030.1647325818">
-			</div>		
-		</div>
-	</main>
-	
-	<footer>
-		<nav class="navbar">
-			<div class="contenedor">
-			<a href="#">HOJA DE VIDA</a>
-			<a href="#">HOBBIES</a>
-			<a href="#">PROYECTO DE VIDA</a>
-			<a href="#">INICIO</a>
-		</div>
-	</nav>
-		<div class="contenedor-imagen">
-			<img src="https://img.freepik.com/vector-gratis/concepto-oficina-casa-hombre-que-trabaja-casa-estudiante-o-autonomo-linda-ilustracion-vectorial_550568-413.jpg?w=740" alt="">
-		</div>
-	</footer>
+        </div>
+        <form action="#" autocomplete="off">
+            <input type="email" name= "nombre" placeholder="ingresa tu nombre" class="campo">
+            <input type="text" name="email" placeholder="ingresa tu correo" class="campo">
+            <textarea name="mensaje" placeholder="ingresa tu mensaje"></textarea>
+            <input type="submit" name="enviar" value="enviar mensaje" class="btn-enviar">
+        </form>
+
+    </div>   
 </body>
 </html>

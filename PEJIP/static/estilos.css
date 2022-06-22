@@ -1,162 +1,79 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 }
 
-a {
+#header{
+	margin:auto;
+	width:100%;
+    text-align: center;
+	font-family: Arial,Helvetica,sans-serif;
+	
+}
+
+ol, ul{
+	list-style: none;
+}
+ 
+.contenedor li a{
+	background: rgb(182, 191, 247);
+	color: white;
 	text-decoration: none;
-	outline: none;
+	padding: 10px 15px;
+	display: block;
+    padding: 20px;
+	width: 260px;
+    text-align: center;
+    
+
+}
+.contenedor li a:hover {
+	background-color: #434343;
 }
 
-a:hover {
-	text-decoration: underline;
+.contenedor > li {
+	float: left;
 }
 
-body {
-    font-family: 'Noto Sans JP', sans-serif;	
-	background: #f2f2f2;
+.contenedor li ul{
+	display:none;
+	position: absolute;
+	min-width: 140px;
+
 }
-
-/* * ============================== */
-/* * ============ HEADER ========== */
-/* * ============================== */
-
-.navbar {
-	background: #b4baf3;
+.contenedor li:hover> ul {
+	display: block;
 }
-
-.navbar a {
-	color: #fff;
-	display: inline-block;
-	padding: 20px;
-	width: 100%;
-	text-align: center;
-	color: #000;
-	transition: .3s ease-out all;
+.contenedor li ul li{
+	position: relative;
 }
-
-.navbar a:hover {
-	background: #1D2F3D;
-	color: #fff;
-	text-decoration: none;
+.contenedor li ul li ul{
+	left: 240px;
+	top: 0px;
 }
-
-.contenedor {
-	max-width: 1000px;
-	width: 90%;
-	margin: auto;
-	display: flex;
-	justify-content: space-between;
-}
-
 /* * ============================== */
 /* * ===== CONTENEDOR IMAGEN ====== */
 /* * ============================== */
-
 .contenedor-imagen {
-	height: 80vh;
+	height: 90vh;
+    margin: auto;
 }
 
 .contenedor-imagen img {
 	width: 100%;
-	height: 100%;
-	vertical-align: top;
+	height:600px;
 	object-fit: cover;
 	object-position: 0 bottom;
 }
-
 /* * ============================== */
-/* * ============ MAIN ============ */
+/* * ===== button====== */
 /* * ============================== */
-
-main {
-	min-height: 100vh;
-}
-
-main .contenido p {
-	margin-bottom: 20px;
-	line-height: 30px;
-	color: #525151;
-}
-
-main .contenido .titulo {
-    font-family: 'Montserrat', sans-serif;
-	font-weight: normal;
-	padding-top: 40px;
-}
-
-main .contenido .fecha {
-	font-size: 14px;
-	color: #B5B5B5;
-}
-
-/* * ============================== */
-/* * ============ ASIDE =========== */
-/* * ============================== */
-
-aside {
-	min-width: 33%;
-	margin: 40px 20px 20px 0;
-	height: 100%;
-	background: #a2a3a3;
-	padding: 20px;
-	border-radius: 3px;
-}
-
-aside .titulo {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: normal;
-	font-size: 24px;
-	margin-bottom: 20px;
-	color: #080808;
-}
-
-aside .indice a {
-	display: block;
-	margin-bottom: 10px;
-	color: #9e0505;
-}
-table,th,td{
-	border: 1px solid #000;
-   }
-
-/* * ============================== */
-/* * ========== FOOTER ============ */
-/* * ============================== */
-
-
-
-/* * ============================== */
-/* * ====== MEDIA QUERIES ========= */
-/* * ============================== */
-@media screen and (max-width: 900px){
-	.navbar .contenedor {
-		flex-wrap: wrap;
-		margin: 0;
-		width: 100%;
-	}
-
-	.navbar a {
-		width: auto;
-		flex: 1;
-	}
-
-	.contenedor-imagen {
-		height: 50vh;
-	}
-
-	main .contenedor {
-		flex-direction: column;
-	}
-}
-
 .button {
 	display:inline-flex;
 	align-items: center;
 	justify-content: center;
 	height: 50px;
-	width: 300px;
+	width: 200px;
 	background: #b4baf3;
 	font-weight: 500;
 	border: none;
@@ -164,88 +81,337 @@ table,th,td{
 	text-transform: uppercase;
 	transition: .3s ease all;
 	border-radius: 5px;
-
-
-
 }
 
 .button:hover {
 	background:#1D2F3D;
-
-
-
 }
-
-.button1 {
-	display:inline-flex;
-	align-items: center;
-	justify-content: center;
-	height: 50px;
-	width: 200px;
-	background: #b4baf3;
-	font-weight: 500;
-	border: none;
-	cursor: pointer;
-	text-transform: uppercase;
-	transition: .3s ease all;
-	border-radius: 5px;
-}
-
-.button:hover {
-	background:#e4e0e0;
-}
-
-
-img {
-	max-width: 100%;
-	max-height: 100%;
-   }
-.indice {
-	height: 300px;
-	width: 400px;
-}
-
-.button2 {
-	display:inline-flex;
-	align-items: center;
-	justify-content: center;
-	height: 50px;
-	width: 200px;
-	background: #b4baf3;
-	font-weight: 500;
-	border: none;
-	cursor: pointer;
-	text-transform: uppercase;
-	transition: .3s ease all;
-	border-radius: 5px;
-}
-
-.button:hover {
-	background:#e4e0e0;
-}
-
 /* * ============================== */
-/* * ========== CSS DE CUADRICULA CONVENIOS ============ */
+/* * ========== galeria imagenes ============ */
 /* * ============================== */
 
-* {
+
+
+div.galeria{
+	margin: 8px 15px;
+	box-shadow: 0 4px 8px 0 rgb(6, 161, 238), 0 6px 20px 0 rgb(0,0,0,.19) ;
+	float:left;
+	width: 395px;
+	cursor: pointer;
+    align-content: center;
+}
+div.galeria img{
+	width: 100%;
+	height: 360px;
+
+}
+div.galeria:hover{
+	border: 1px solid rgb(5, 5, 5);
+	transform: rotate(-3deg);
+}
+div.pie{
+	text-align: center;
+	text-shadow: 2px 2px 5px rgb(3, 3, 3);
+	padding: 10px;
+}
+p {
+	align-content: flex-end;
+}
+/* * ============================== */
+/* * ========== formulario contactanos============ */
+/* * ============================== */
+
+*{
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
-  }
-  
-.columna {
-	float: left;
-	width: 40%;
-	padding-right: 100px;
+	font-family: 'open sans', sans-serif;
+
 }
-  
-.fila::after {
-	content: "";
-	clear: both;
-	display: table;
+ .container-form{
+	 width: 100px; ;
+	 max-width:  1100px; 
+	 margin: auto;
+	 display: grid;
+	 grid-template-columns: repeat(2,1 fr);
+	 grid-gap: 50px;
+	 margin-top: 90px;
+
+ }
+
+ .container-form h2{
+	margin-bottom: 15px;
+	font-size: 35px;
+	
 }
 
-img {
-	/* Para que sea responsiva */
+.container-form p{
+	font-size:17px;
+	line-height:1.6;
+	margin-bottom: 36px;
+
+}
+
+.container-form a{
+	font-size:17px;
+	display: inline-block;
+	text-decoration: none;
+	width: 100%;
+	color: black;
+	margin-bottom: 15px;
+	font-weight: 700;
+
+}
+.container-form a i{
+	color: orange;
+	margin-right: 10px;
+}
+
+.container-form form .campo,textarea{
+	width: 100%;
+	padding: 15px 10px;
+	font-size: 15px;
+	border: 1px solid #dbdbdb;
+	margin-bottom: 20px;
+	border-radius: 3px;
+	outline: opx;
+
+
+}
+
+.container-form form textarea{
+	max-width: 530px;
+	min-width: 530px;
+	min-height: 140px;
+	max-height: 150px;
+}
+
+.container-form .btn-enviar {
+	padding: 15px;
+	font-size: 16px;
+	border: none;
+	outline: 0px;
+	background: orange;
+	color: white;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: all 300ms ease;
+}
+
+.container-form .btn-enviar:hover {
+	background: #e39483;
+}
+/* * ============================== */
+/* * ========== login,html y loginvista.html ============ */
+/* * ============================== */
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	background: url(img/login.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+*{
+	box-sizing: border-box;
+}
+
+.contenedor{
+	width: 100%;
+	padding: 15px;
+}
+
+.formulario{
+	background: #fff;
+	margin: 150px;
+	padding: 3px;
+
+
+}
+
+h1{
+	text-align: center;
+	color: #1a2537;
+	font-size: 40px;
+
+}
+
+input[type="text"],
+input[type="password"]{
+	font-size: 20px;
+	width: 82%;
+	padding: 10px;
+	border: none;
+
+}
+
+.input-contenedor{
+	margin-bottom: 15px;
+	border: 1px solid #aaa;
+}
+
+.icon{
+	min-width: 50px;
+	text-align: center;
+	color: #999;
+}
+
+.button{
+	border: none;
 	width: 80%;
-  }
+	color: white;
+	font-size: 20px;
+	background: cadetblue;
+	padding: 15px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+
+}
+
+.button:hover{
+	background: rgb(182, 191, 247);
+
+}
+
+p{
+	text-align: center;
+}
+
+.link{
+	text-decoration: none;
+	color: #1a2537;
+	font-weight: 600;
+
+}
+
+.link:hover{
+	color: cadetblue;
+
+}
+@media(min-widh:768px)
+{
+	.formulario{
+		margin: auto;
+		width: 500px;
+		margin-top: 150px;
+		border-radius: 2%;
+	}
+}
+/* * ============================== */
+/* * ========== usuario registrado ============ */
+/* * ============================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-yellow: #f1c40f;
+  --color-red: #db2b39;
+  --color-blue-dark: #29335c;
+  --color-blue: #2130b3;
+
+  --size-btn-collapse: 10.5rem;
+
+  --time-animation: 0.3s;
+  --box-shadow: 3px 7px 7px rgba(0 0 0 /22%);
+}
+body {
+  font-family: sans-serif;
+}
+.nav-main a {
+	text-decoration: none;
+	color:inherit;
+}
+.nav-main {
+	background-color:rgb(182, 191, 247);
+	padding: 0.6rem 1.2rem;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.nav-main__btn-collapse-icon{
+	--size: 45px;
+	width: var(--size);
+	height: var(--size);
+	border-radius: 50%;
+	background-color:cadetblue;
+	padding: 0.6rem 0.3rem;
+	z-index: 10;
+	cursor: pointer;
+	box-shadow: var(--box-shadow);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+
+}
+
+.icon-nav:first-child {
+	transform: translateY(0.5em) rotate(45deg);
+}
+.icon-nav:nth-of-type(2) {
+	transform: scale(0);
+}
+.icon-nav:last-child {
+	transform: translateY(-0.5em) rotate(-45deg);
+}
+
+.nav-main__btn-collapse:checked
+ + .nav-main__btn-collapse-icon
+  .icon-nav:first-child{
+	transform: translateY(0.5em)rotate(45deg);
+}
+.nav-main__btn-collapse:checked
+ + .nav-main__btn-collapse-icon
+  .icon-nav:nth-of-type(2){
+	transform: scale(0);
+}	
+.nav-main__btn-collapse:checked
+ + .nav-main__btn-collapse-icon
+  .icon-nav:last-child{
+	transform: translateY(0.5em)rotate(-45deg);
+}
+
+
+.icon-nav {
+	display: block;
+	width: 60%;
+	height: 2px;
+	background-color: #fff;
+}
+.nav-main__btn-collapse-bg{
+	height: 100%;
+	width: var(--size-btn-collapse);
+	background-color: var(--color-red);
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: translateX(calc(var(--size-btn-collapse) / 2 * -1));
+}
+.nav-main__btn-collapse:checked .nav-main__btn-collapse-bg{
+	transform: translateX(0);
+}
+.social-networks{
+	background-color: #2130b3;
+	border-radius: 0.1rem 1rem 0;
+	padding: 0.4rem;
+	padding-left: 1.5rem;
+	color: #fff;
+	box-shadow: var(--box-shadow);
+	z-index: 1;
+	margin-left: -1rem;
+	transform: scaleX(0);
+	transition: tranform var(--time-animation);
+}
+.social-networks__link-item{
+	margin: 0 1rem;
+}
+.nav-main__btn-collapse:checked  .social-networks{
+	transform: scaleX(1);
+
+}
 

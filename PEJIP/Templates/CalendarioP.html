@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Calendario Prenatal</title>
+        <link rel="stylesheet" href="{% static 'Calendario_P.css'%}" class="css">
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <p class="logo">PEJIP</p>
+                <img class="icono" src="{% static 'img_CP/Logo.png' %}">
+                <nav>
+                    <a href="#que-es">¿QUÉ ES?</a>
+                    <a href="#como-funciona">¿EN QUÉ CONSISTE?</a>
+                </nav>
+            </div>
+        </header>
+
+        <section id="hero">
+            <h1>Calendario Prenatal</h1>
+        </section>
+
+        <section id="que-es">
+            <div class="container">
+                <div class="img-container"></div>
+                <div class="texto">
+                    <h2>¿QUÉ ES?</h2>
+                    <p>El calendario prenatal es un calendario de gestación, mediante el cual se pretende llevar un seguimiento del embarazo hasta el momento del nacimiento. Se pretende ser un medio de control mediante el cual las mujeres puedan seguir de manera detallada todo el proceso antes del nacimiento.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="como-funciona">
+            <div class="container">
+                <div class="texto">
+                    <h2>¿EN QUÉ CONSISTE?</h2>
+                    <p>Funciona como medio de control, el usuario debe ingresar la fecha de su última menstrucación, sumado, la fecha de la posible concepión, la sintomatología qe presenta, los exámenes que se va realizando a medida que avanza el embarazo y demás.</p>
+                </div>
+                <div class="img-container"></div>
+            </div>
+        </section>
+
+        <section id="Calendar">
+            <form action="">
+                <h2>Calendario</h2>
+            <div class="boton">                    
+                    <a href="Funciones_Calendario.html">Calendario Menstrual</a>
+            </div>
+        </form>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy;PEJIP</p>
+            </div>
+        </footer>
+    </body>
+</html>

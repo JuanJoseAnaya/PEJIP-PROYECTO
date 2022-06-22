@@ -1,0 +1,145 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Calendario Prenatal</title>
+    <link rel="stylesheet" href="{% static 'Funciones_C.css'%}" class="css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">PEJIP</p>
+            <img class="icono" src="{% static 'img_CP/Logo.png' %}">
+            <nav>
+                <a href="CalendarioP.html">Volver</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <h1>Tu Calendario Prenatal</h1>
+    </section>
+
+    <section id="tu-calendariom">
+        <div class="container">
+        </div>
+    </section>
+
+    <section id="tucalendariom">
+
+        <div class="img-container"></div>
+    </section>
+
+    <section id="formulario">
+    <table class="tabla">    
+        <div class="container">
+            <div class="funciones">
+                <tr>
+                <td>
+                <div class="formu-carta">
+                    <form action="" method="">
+                        <h1>Última menstruación</h1>
+                        <input type="date" name="Dia"/>
+                    </form>
+                </div>
+            </td>
+            <td>
+                <div class="formu-carta">
+                    <form action="" method="">
+                        <h1>Fecha de concepción</h1>
+                        <input type="date" name="Dia"/>
+                    </form>
+                </div>
+            </td>
+            <td rowspan="3">
+                <img class="contenido_t" src="{% static 'img_CP/Bebe.png' %}">
+            </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2">
+                <div class="formu-carta">
+                    <form action="" method="">
+                        <h1>Fecha posible parto</h1>
+                        <p>Conoce la fecha aproximada del nacimiento de tu bebé.</p>
+                        <input type="date" name="Día"/>
+                    </form>
+                </div>
+            </td>
+            </tr>
+
+            </div>
+        </div>
+    </tr>
+    
+        <tr>
+            <td>
+    
+    <div class="menu">   
+        <form action="" method="">  
+            <h2>Exámenes</h2>
+         <label><input type="checkbox" id="cbox1" value="first_checkbox"> Análisis de sangre</label></br>
+         <label><input type="checkbox" id="cbox2" value="first_checkbox"> Examen de tiroides</label></br>
+         <label><input type="checkbox" id="cbox3" value="first_checkbox"> Evaluación del cérvix</label></br>
+         <label><input type="checkbox" id="cbox3" value="first_checkbox"> Hepatitis B y C</label></br>
+         <label><input type="checkbox" id="cbox4" value="first_checkbox"> Exámen de ETS</label></br>
+         <label><input type="checkbox" id="cbox5" value="first_checkbox"> Examen de VIH</label></br>
+         <label><input type="checkbox" id="cbox6" value="first_checkbox"> Hemograma</label></br>
+         <label><input type="checkbox" id="cbox7" value="first_checkbox"> Examen de orina</label></br>
+         <label><input type="checkbox" id="cbox8" value="first_checkbox"> Ultrasonido</label></br>
+         <label><input type="checkbox" id="cbox9" value="first_checkbox"> Examen de VDRL</label></br>
+         <label><input type="checkbox" id="cbox5" value="first_checkbox"> Examen de Glicemia</label></br>
+         <label><input type="checkbox" id="cbox5" value="first_checkbox"> Examen detección genética</label></br>
+         <label><input type="checkbox" id="cbox5" value="first_checkbox"> Examen de Chagas</label></br>
+         <label><input type="checkbox" id="cbox5" value="first_checkbox"> Examen de RPR</label></br>
+         <label><input type="checkbox" id="cbox5" value="first_checkbox"> Cultivo Estreptococo</label></br>      
+        </BR>
+         <div class="boton_g">
+            <nav>
+                <a href="CalendarioP.html">Guardar</a>
+            </nav> 
+        </div>
+        
+        </form>
+    </div>
+        </td>
+        <td>
+    
+    <div class="menu">
+        <form action="" method="">
+            <h2>Síntomas</h2>
+         <label><input type="checkbox" id="cbox1" value="first_checkbox"> Mamas hinchadas</label></br>
+         <label><input type="checkbox" id="cbox2" value="first_checkbox"> Naúseas</label></br>
+         <label><input type="checkbox" id="cbox3" value="first_checkbox"> Vómito</label></br>
+         <label><input type="checkbox" id="cbox4" value="first_checkbox"> Fatiga</label></br>
+         <label><input type="checkbox" id="cbox5" value="first_checkbox"> Humor cambiante</label></br>
+         <label><input type="checkbox" id="cbox6" value="first_checkbox"> Estreñimiento</label></br>
+         <label><input type="checkbox" id="cbox7" value="first_checkbox"> Aversiones alimentarias</label></br>
+         <label><input type="checkbox" id="cbox8" value="first_checkbox"> Congestión nasal</label></br>
+         <label><input type="checkbox" id="cbox9" value="first_checkbox"> Dolor de cabeza</label></br>
+         <label><input type="checkbox" id="cbox10" value="first_checkbox"> Cansancio</label></br>
+         <label><input type="checkbox" id="cbox11" value="first_checkbox"> Sueño</label></br>
+         <label><input type="checkbox" id="cbox12" value="first_checkbox"> Antojos</label></br>
+         <label><input type="checkbox" id="cbox13" value="first_checkbox"> Estrés</label></br>
+         <label><input type="checkbox" id="cbox14" value="first_checkbox"> Aumentos de la cantidad de micciones</label></br>
+        </BR>
+        <div class="boton_g">
+           <nav>
+               <a href="CalendarioP.html">Guardar</a>
+           </nav> 
+       </div>
+        </form>
+    </div>
+</td>
+</tr>
+</table>
+</section>
+
+    <footer>
+        <div class="container">
+            <p>&copy;PEJIP</p>
+        </div>
+    </footer>
+
+</body>
+</html>

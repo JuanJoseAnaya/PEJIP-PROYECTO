@@ -1,0 +1,38 @@
+{# Cargamos la librería #}
+  {% load bootstrap4 %}
+ 
+  {# CSS Bootstrap #}
+  {% bootstrap_css %} 
+ 
+  {# Widget Tweaks #}
+  {% load widget_tweaks %}
+ 
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    
+    <!-- {{ form.as_p }} -->
+    <div class="form-group">
+      <label for="ideventos" class="txt_negrita">Codigo de Eventos</label>
+      {{ form.ideventos|add_class:"form-control" }} <!-- Usamos la librería 'widget_tweaks' para crear esta caja de texto -->
+    </div>
+    <div class="form-group">
+      <label for="fecha" class="txt_negrita">Fecha</label>
+      {{ form.fecha|add_class:"form-control" }}
+    </div>
+    <div class="form-group">
+      <label for="hora" class="txt_negrita">Hora</label>
+      {{ form.hora|add_class:"form-control" }}
+    </div>
+    <div class="form-group">
+        <label for="lugar" class="txt_negrita">Lugar</label>
+        {{ form.lugar|add_class:"form-control" }}
+      </div>
+      <div class="form-group">
+        <label for="informacionevento" class="txt_negrita">InformacionEvento</label>
+        {{ form.informacionevento|add_class:"form-control" }}
+      </div>
+ 
+    <button type="submit" class="btn btn-primary">Aceptar</button>
+    <a href="../" type="submit" class="btn btn-primary">Volver</a>
+   
+  </form>

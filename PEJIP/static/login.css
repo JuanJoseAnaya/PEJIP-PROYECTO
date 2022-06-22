@@ -1,0 +1,28 @@
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    background: url(imglogin/login.jpg);
+    background-size: cover;
+	background-attachment: fixed;
+    font-weight: 300;
+    color: var(--#000);
+}
+.form-control, .btn{
+    min-height: 3.125rem;
+    line-height: initial;
+}
+.img-1{
+    background-image: url(imglogin/do.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-2{
+    background-image: url(imglogin/em.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-3{
+    background-image: url(imglogin/an.jpg);
+    background-size: cover;
+    background-position: center;
+}

@@ -1,0 +1,21 @@
+{# Cargamos la librería #}
+  {% load bootstrap4 %}
+ 
+  {# CSS Bootstrap #}
+  {% bootstrap_css %} 
+ 
+  {# Widget Tweaks #}
+  {% load widget_tweaks %}
+ 
+<h4>Detalles</h4>
+ 
+<p><span class="txt_negrita">Codigo de Eventos:</span> <br> {{object.ideventos}}</p>
+<p><span class="txt_negrita">Fecha:</span> <br> {{object.fecha}}</p>
+<p><span class="txt_negrita">Hora:</span> <br> {{object.hora}}</p>
+<p><span class="txt_negrita">Lugar:</span> <br> {{object.lugar}}</p>
+<p><span class="txt_negrita">InformacionEvento:</span> <br> {{object.informacionevento}}</p>
+<p><span class="txt_negrita">Creado:</span> <br> {{object.created_at}}</p>
+<p><span class="txt_negrita">Actualizado:</span> <br> {{object.updated_at}}</p>
+ 
+<!-- Botón para volver a la vista principal (Home) -->
+<a href="../" type="submit" class="btn btn-primary">Volver</a>

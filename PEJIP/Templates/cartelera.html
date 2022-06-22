@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+            <title>PEJIP</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,
+        maximum-scale=1,0, minium-scale=1.0">
+        <link rel="stylesheet" href="{% static 'carteleracss/cartelera.css' %}">
+        <link rel="stylesheet" href="{% static 'cartelerafonts/fontcartelera.css' %}">
+    </head>
+    <body>
+        <header class="header">
+            <div class="contenedor">
+                <h1 class="logo">PEJIP</h1>
+                <spna class="icon-menu" id="btn-menu"></spna>
+                <nav class="nav" id="nav">
+                    <ul class="menu">
+                        <li class="menu__item"><a class="menu__link select" href="">Cartelera de Eventos</a></li>
+                        <li class="menu__item"><a class="menu__link" href="">Cursos</a></li>
+                        <li class="menu__item"><a class="menu__link" href="">Docentes</a></li>
+                        <li class="menu__item"><a class="menu__link" href="">Contacto</a></li>
+                    </ul>
+                </nav>    
+            </div>
+        </header>
+
+        <div class="banner">
+            <img src=" {% static 'imgcartelera/banner1.jpg' %}"   alt="" class="banner__img">
+            <div class="contenedor">
+                <h2 class="banner__titulo">Cartelera Informativa</h2>
+                <p class="banner__txt">Eventos disponibles para tu salud en Popayan</p>
+            </div>
+        </div> 
+        <main class="main">
+            <div class="contenedor">
+                <section class="info">
+                    <article class="info__columna">
+                        <a href="https://www.hospitalsanjose.gov.co/">
+                            <img src="{% static 'imgcartelera/sanjose.jpg' %}" alt="" class="info__img">
+                        </a>
+                        <h2 class="info__titulo">San Jose</h2>
+                        <p class="info__txt">presta Servicios de salud de alta complejidad, con enque de calidad y mejoramiento continuo, comprometico con la integridad, seguridad y humanizacion</p>
+                    </article>
+                    <article class="info__columna">
+                        <a href="https://laestancia.com.co/web/">
+                            <img src="{% static 'imgcartelera/estancia.jpg' %}" alt="" class="info__img">
+                        </a>
+                        <h2 class="info__titulo">La Estancia</h2>
+                        <p class="info__txt">Id incidunt, voluptate ducimus, aut, doloribus laborum ut reiciendis tempore dolorem doloremque iusto minus ea?</p>
+                    </article>
+                    <article class="info__columna">
+                        <a href="https://www.hosusana.gov.co/">
+                            <img src="{% static 'imgcartelera/susana.jpg' %}" alt="" class="info__img">
+                        </a>
+                        <h2 class="info__titulo">Susana Lopez</h2>
+                        <p class="info__txt">In sequi, culpa laudantium, architecto blanditiis veritatis asperiores reprehenderit fuga vel ut delectus qui iure.</p>
+                    </article>
+                </section>
+                <section class="cursos">
+                    <h2 class="section__titulo">Nuevos Eventos</h2>
+                    <div class="cursos__columna">
+                        <img src="{% static 'imgcartelera/charco.jpg' %}" alt="" class="cursos__img">
+                        <div class="cursos__descripcion">
+                            <h3 class="cursos__titulo" >El Charco</h3> <br>
+                            <a class="boton" href="http://www.popayan.gov.co/ciudadanos/sala-de-prensa/calendario-de-eventos/Secretar%C3%ADa-de-Salud-de-Popay%C3%A1n--a-trav%C3%A9s-del-PIC-realizar%C3%A1-Jornada-de-salud-en-el-Corregimiento-El-Charco" target="_blank">Ver Más</a>
+                            <p class="cursos__txt">Secretaría de Salud de Popayán a través del PIC realizará Jornada de salud en el Corregimiento El Charco.</p>
+                           
+                        </div>
+                    </div>
+                    <div class="cursos__columna">
+                        <img src="{% static 'imgcartelera/sanjose.jpg' %}" alt="" class="cursos__img">
+                        <div class="cursos__descripcion">
+                            <h3 class="cursos__titulo">Cartelera2</h3> <br>
+                            <a class="boton" href="http://laweb.com" target="_blank">Ver Más</a>
+                            <p class="cursos__txt">Veritatis, quia voluptas ipsam dolorem velit recusandae earum. Ipsum, laboriosam.</p>
+                        </div>
+                    </div>
+                    <div class="cursos__columna">
+                        <img src="{% static 'imgcartelera/susana.jpg' %}" alt="" class="cursos__img">
+                        <div class="cursos__descripcion">
+                            <h3 class="cursos__titulo">Cartelera3</h3> <br>
+                            <a class="boton" href="http://laweb.com" target="_blank">Ver Más</a>
+                            <p class="cursos__txt">Sapiente reiciendis eligendi alias nam illum optio molestiae facilis corrupti.</p>
+                                                    </div>
+                    </div>
+                    <div class="cursos__columna">
+                        <img src="{% static 'imgcartelera/estancia.jpg' %}" alt="" class="cursos__img">
+                        <div class="cursos__descripcion">
+                            <h3 class="cursos__titulo">Cartelera4</h3> <br>
+                            <a class="boton" href="http://laweb.com" target="_blank">Ver Más</a>
+                            <p class="cursos__txt">Excepturi corrupti odio doloremque culpa modi adipisci. Ex, voluptatum explicabo.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>  
+        
+    <footer class="footer">
+        <div class="social">
+            <a href="" class="icon-facebook"></a>
+            <a href="" class="icon-twitter"></a>
+            <a href="" class="icon-gplus"></a>
+        </div>
+        <div class="p copy">&copy; PEJIP -2022 - Todos los derechos reservados </div>
+    </footer>
+        <script src="js/menu.js"></script>
+    </body>
+</html>
